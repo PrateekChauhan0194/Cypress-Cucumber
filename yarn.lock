@@ -1951,7 +1951,7 @@ cucumber@^4.2.1:
     util-arity "^1.0.2"
     verror "^1.9.0"
 
-cypress-cucumber-preprocessor@^4.1.1:
+cypress-cucumber-preprocessor@4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/cypress-cucumber-preprocessor/-/cypress-cucumber-preprocessor-4.1.1.tgz#d730620c1b57f379677b29baff4f07a0180959c6"
   integrity sha512-YBUrCfYsbC7QIWTwajd4L861GBMO3ybub3920+GXgiPnCOevrrY4QL670yHMZRv1d15h4yC0rbb3rDkgWDxMYA==
