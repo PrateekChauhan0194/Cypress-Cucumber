@@ -1,0 +1,13 @@
+{
+  "url": "https://rahulshettyacademy.com/angularpractice/",
+  "selectors": {
+    "tfName": "input[name='name']",
+    "dataBindingName": "h4 input[name='name']",
+    "rbEntrepreneur": "input#inlineRadio3"
+  },
+  "data": {
+    "name": "Prateek",
+    "expectedMinLength": "2",
+    "productsToSelect": ["iphone X", "Nokia Edge", "Samsung Note 8"]
+  }
+}

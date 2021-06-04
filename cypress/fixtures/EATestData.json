@@ -1,0 +1,9 @@
+{
+  "selectors": {
+    "btnAddBasicPlanToCart": "button#plan-select-button-RSOT"
+  },
+  "data": {
+    "planPageUrl": "https://energyaustralia.com.au/home/electricity-and-gas/plans",
+    "newOrExistingCustomer": "New"
+  }
+}

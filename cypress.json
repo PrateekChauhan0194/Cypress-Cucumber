@@ -1,0 +1,15 @@
+{
+  "defaultCommandTimeout": 10000,
+  "env": {
+    "info": "This env section can be used to define the custom global/environment variables which can be used in the tests.",
+    "usage": "These env variables can be used using 'Cypress.env(<<variable-name>>)'",
+    "example": "Cypress.env('info')",
+    "settingEnvVarThroughCLI": "cypress run --env info=This is the overridden info env variable"
+  },
+  "projectId": "csb7p3",
+  "reporter": "mochawesome",
+  "retries": {
+    "runMode": 2
+  },
+  "testFiles": "**/*.feature"
+}
