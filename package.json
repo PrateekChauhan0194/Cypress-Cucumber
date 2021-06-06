@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "report": "node cypress/report-generator.js",
     "itests:dash": "cypress run --record --key 81610ab4-6bc1-47a1-b07d-769ee92b120f",
-    "itests:mochawesome": "cypress run --reporter mochawesome"
+    "itests:mochawesome": "cypress run --reporter mochawesome",
+    "e2e:all": "npx cypress-tags run -e TAGS=$npm_package_config_test_tag; yarn report"
+  },
+  "config": {
+    "test_tag": "@E2E"
   },
   "author": "Prateek Chauhan",
   "license": "ISC",
@@ -16,9 +21,16 @@
     "cypress-iframe": "1.0.1",
     "mocha": "8.4.0",
     "mochawesome": "6.2.2",
-    "typescript": "4.3.2"
+    "typescript": "4.3.2",
+    "multiple-cucumber-html-reporter": "1.18.0"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/report/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   }
 }
