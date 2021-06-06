@@ -1,9 +1,14 @@
-import { Then } from "cypress-cucumber-preprocessor/steps";
+import { Given } from "cypress-cucumber-preprocessor/steps";
 
-Then(/^This is a test step$/,
+Given(/^This is a test step$/,
     async() => {
     cy.visit('https://google.com/');
-    cy.get('input[name="q"]', {timeout: 10000}).type('test search');
-    cy.get('input[value="Google Search"]:visible').click();
-    expect(true).eq(true, 'This is a test assertion.');
+    cy.title().should('eq', 'Google');
+});
+
+Given(/^This is a test step with data table$/,
+    async (dataTable) => {
+    const data = dataTable.hashes();
+    cy.log(`data[0].key: ${data[0].key}`);
+    cy.log(`data[0].value: ${data[0].value}`);
 });
