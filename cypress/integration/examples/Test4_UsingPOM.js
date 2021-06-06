@@ -3,7 +3,6 @@ import Shop from '../../support/pageObjects/Shop';
 
 const homePage = new HomePage();
 const shopPage = new Shop();
-const List = require('collections/list');
 
 describe('Angular Practice [Using POM ', () => {
     let selectors;

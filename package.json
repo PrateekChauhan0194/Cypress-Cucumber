@@ -1,22 +1,24 @@
 {
   "name": "cypress-cucumber",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a cypress test automation framework using BDD and page object design pattern.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "itests:dash": "cypress run --record --key 81610ab4-6bc1-47a1-b07d-769ee92b120f",
     "itests:mochawesome": "cypress run --reporter mochawesome"
   },
-  "author": "",
+  "author": "Prateek Chauhan",
   "license": "ISC",
   "devDependencies": {
-    "collections": "5.1.12",
+    "@cypress/browserify-preprocessor": "3.0.1",
+    "@types/cypress-cucumber-preprocessor": "4.0.0",
     "cypress": "7.3.0",
     "cypress-cucumber-preprocessor": "4.1.1",
-    "cypress-iframe": "^1.0.1",
+    "cypress-iframe": "1.0.1",
     "mocha": "8.4.0",
     "mochawesome": "6.2.2",
+    "resolve": "1.20.0",
     "typescript": "4.3.2"
   },
   "cypress-cucumber-preprocessor": {
