@@ -8,7 +8,7 @@
     "report": "node cypress/report-generator.js",
     "itests:dash": "cypress run --record --key 81610ab4-6bc1-47a1-b07d-769ee92b120f",
     "itests:mochawesome": "cypress run --reporter mochawesome",
-    "e2e:all": "npx cypress-tags run -e TAGS=$npm_package_config_test_tag; yarn report"
+    "e2e:all": "npx cypress-tags run -e TAGS=$npm_package_config_test_tag;yarn report"
   },
   "config": {
     "test_tag": "@E2E"
