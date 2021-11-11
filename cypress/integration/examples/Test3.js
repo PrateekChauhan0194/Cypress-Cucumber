@@ -2,7 +2,7 @@ import 'cypress-iframe';
 
 describe('Automation practice', () => {
     beforeEach('Navigating to the test page', () => {
-        cy.visit('https://rahulshettyacademy.com/AutomationPractice/');
+            cy.visit('https://rahulshettyacademy.com/AutomationPractice/');
     });
 
     it('Handling checkboxes', () => {
